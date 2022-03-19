@@ -4,18 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <style>
+        
+    </style>
 </head>
 <body style="padding: 0px ; margin:0px;">
-   
+    <nav class="navbar navbar-default ">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Octocat Limited</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" action="/action_page.php" style="margin: 8px">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </nav>
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <ul class="nav navbar-nav ">
+            <li class="active"><a href="#"><span class="glyphicon glyphicon-home">Home</span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart">Cart </span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-dashboard">Account </span></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-inbox">Message</span></a></li>
+        </ul>
+    </nav>
 
     <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>

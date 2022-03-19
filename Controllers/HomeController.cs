@@ -13,5 +13,20 @@ namespace Shopping_Project.Controllers
         {
             return View();
         }
+    public ActionResult phone_Details()
+        {
+            return View();
+        } 
+
+        public ActionResult ipods_Details()
+        {
+            return View();
+        }public ActionResult headphone_Details()
+        {
+            return View();
+        }public ActionResult ps3_Details()
+        {
+            return View();
+        }
     }
 }
